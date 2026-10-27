@@ -101,3 +101,27 @@ print("Hello, " + name + "!")        # TODO: change the greeting to your liking
 ```
 
 What does the `input` function return when the user presses Enter without typing anything?
+
+---
+## 2026-10-27 15:24, in .
+
+**Me:** Why do we use an if/else statement to check whether the second number is zero before dividing?
+
+**Tutor:**
+
+Concept: Preventing a ZeroDivisionError by checking the divisor.
+
+```python
+def safe_divide(numerator, denominator):
+    # TODO: write an if/else that checks denominator
+    if # TODO: write the condition here:
+        return "Cannot divide by zero"
+    else:
+        return numerator / denominator
+
+# Toy example
+print(safe_divide(10, 2))  # Expected: 5.0
+print(safe_divide(10, 0))  # Expected: "Cannot divide by zero"
+```
+
+Question: Which operator compares the denominator to zero in the condition?
