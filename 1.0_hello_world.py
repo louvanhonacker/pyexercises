@@ -35,3 +35,6 @@ print("2. I learn something new every day!")
 print("3. I learn something new every day!")
 print("4. I learn something new every day!")
 print("5. I learn something new every day!")
+
+for i in range(0,5):
+    print("I learn something new every day!")
