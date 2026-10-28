@@ -279,3 +279,21 @@ print(original)  # TODO: what prints here?
 ```
 
 Which function must you use if you want to keep the original list and still have a sorted version?
+
+---
+## 2026-10-28 09:45, in .
+
+**Me:** What does the pop() method do in a Python dictionary?
+
+**Tutor:**
+
+The dictionary method `pop()` removes a key-value pair and returns the value.
+
+```python
+# Example: remove a key and keep its value
+prices = {"apple": 1.20, "banana": 0.50}
+value = prices.pop("banana")  # TODO: what is the value of `value` after this line?
+print(prices)                 # TODO: what will this print?
+```
+
+Which argument does `pop()` require?
