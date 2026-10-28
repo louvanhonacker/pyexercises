@@ -315,3 +315,24 @@ for index, fruit in enumerate(items):
 ```
 
 What does enumerate() return for each iteration?
+
+---
+## 2026-10-28 10:12, in .
+
+**Me:** Why do we use break in a while loop?
+
+**Tutor:**
+
+A `break` statement exits a loop immediately, even if the loop condition is still true.
+
+```python
+count = 0
+while True:          # loop runs forever unless we break
+    count += 1
+    if count == 3:   # when count reaches 3 we leave the loop
+        break
+    print("still in loop")
+print("loop finished")
+```
+
+What does `break` do when the condition `count == 3` becomes true?
