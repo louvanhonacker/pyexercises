@@ -297,3 +297,21 @@ print(prices)                 # TODO: what will this print?
 ```
 
 Which argument does `pop()` require?
+
+---
+## 2026-10-28 09:55, in .
+
+**Me:** Why do we use enumerate() in a for loop?
+
+**Tutor:**
+
+Enumerate() gives you both the index and the value while looping.
+
+```python
+items = ['apple', 'banana', 'cherry']
+
+for index, fruit in enumerate(items):
+    # TODO: print the index and the fruit
+```
+
+What does enumerate() return for each iteration?
