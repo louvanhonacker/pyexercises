@@ -233,3 +233,21 @@ else:
 ```
 
 What does the `else` block print when `temperature` is 18?
+
+---
+## 2026-10-28 09:04, in .
+
+**Me:** What does the sort() method do to a list in Python?
+
+**Tutor:**
+
+The sort() method changes a list so that its items are in ascending order.
+
+```python
+# TODO: change the list so it is sorted
+toys = ["teddy bear", "puzzle", "blocks"]
+toys.sort()
+print(toys)
+```
+
+What argument can you give to sort() to put the list in descending order?
