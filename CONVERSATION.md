@@ -251,3 +251,31 @@ print(toys)
 ```
 
 What argument can you give to sort() to put the list in descending order?
+
+---
+## 2026-10-28 09:16, in .
+
+**Me:** What is the difference between sorted() and sort() in Python?
+
+**Tutor:**
+
+Sorting a list in place versus returning a new list.
+
+- `sorted()` returns a new list and leaves the original unchanged.
+- `list.sort()` changes the list in place and returns `None`.
+
+Pattern:
+
+```python
+# sorted() example
+original = [3, 1, 4]
+new_list = sorted(original)  # TODO: what does new_list contain?
+print(original)  # TODO: what prints here?
+
+# list.sort() example
+original = [3, 1, 4]
+original.sort()  # TODO: what is the return value of this call?
+print(original)  # TODO: what prints here?
+```
+
+Which function must you use if you want to keep the original list and still have a sorted version?
