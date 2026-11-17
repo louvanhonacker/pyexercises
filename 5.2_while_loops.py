@@ -51,4 +51,4 @@ while i < 5:
 
 # displaying the summary
 print("This is the end of the loop.")
-print("Number of attempts:", i)
+print("Number of attempts:", i

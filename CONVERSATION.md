@@ -336,3 +336,22 @@ print("loop finished")
 ```
 
 What does `break` do when the condition `count == 3` becomes true?
+
+---
+## 2026-11-17 13:10, in .
+
+**Me:** Why do we use return instead of print in a Python function?
+
+**Tutor:**
+
+A function returns a value so the caller can use it later; print only shows text on the screen.
+
+```python
+def add(a, b):
+    # TODO: replace the print line with a return statement
+    total = a + b
+    print(total)          # this only displays the result
+    return total          # this gives the result back to whoever called the function
+```
+
+What is the difference between the value that print shows and the value that return gives back?
