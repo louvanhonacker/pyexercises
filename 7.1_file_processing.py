@@ -49,3 +49,53 @@ DELIVERABLE
 
 
 # Your code below
+# Open names.txt and read all the lines
+with open("names.txt", "r", encoding="utf-8") as file:
+    lines = file.readlines()
+
+# Create an empty list to store the cleaned names
+people = []
+
+# Clean each line
+for line in lines:
+
+    # Remove unnecessary spaces
+    line = line.strip()
+
+    # Ignore empty lines
+    if line == "":
+        continue
+
+    # Split the name into separate words
+    parts = line.split()
+
+    # Handle names with two words
+    if len(parts) == 2:
+        first_name = parts[0].capitalize()
+        last_name = parts[1].capitalize()
+
+    # Handle the name Guido van Rossum
+    elif len(parts) == 3 and parts[1].lower() == "van":
+        first_name = parts[0].capitalize()
+        last_name = "van " + parts[2].capitalize()
+
+    else:
+        print("Unexpected name format:", line)
+        continue
+
+    # Add the cleaned name to the list
+    people.append((last_name, first_name))
+
+# Sort the names alphabetically by last name
+people.sort(key=lambda person: person[0].casefold())
+
+# Create a new file with the cleaned and sorted names
+with open("cleaned_names.txt", "w", encoding="utf-8") as file:
+
+    for last_name, first_name in people:
+        file.write(first_name + " " + last_name + "\n")
+
+# Display the result
+print("Cleaning completed!")
+print("Number of names:", len(people))
+print("The result is saved in cleaned_names.txt")
